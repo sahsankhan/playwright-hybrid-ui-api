@@ -67,4 +67,4 @@ tests/e2e        UI journey
 
 ## CI
 
-Not wired yet. Config is already CI-ready (`CI=true` → extra retries, GitHub reporter). GitHub Actions is the next step after this suite is green locally.
+GitHub Actions runs `npm test` on push/PR (`CI=true` adds retries and the GitHub reporter) and uploads the Playwright HTML report as the `playwright-report` artifact.
